@@ -1,0 +1,105 @@
+body{
+background-color: #FFFFFF;
+font-family: 'Poppins', sans-serif;
+position: static;
+}
+
+/* Style the header*/
+.header{
+  background-color: #124061; /*LIGHT NAVY*/
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+
+h2{
+  color: #124061;
+}
+
+/*change color of certain text*/
+span{
+  color:red;
+  font-weight: bold;
+
+}
+
+/*  still navigation on left and body on right */
+ul.navigation { /*navigation column*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #DEDFE0; /*LIGHT GRAY*/
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+/*inavtive links*/
+li a {
+  display: block;
+  color: #555555;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+/*current link*/
+li a.active {
+  background-color: #DDCAC6; /*PALE PINK*/
+  color: #222222;
+}
+li a:hover:not(.active) {
+  background-color: #8D9499;/*MEDIUM GRAY*/
+  color: white;
+}
+/*qoute*/
+.qoute{
+  color: #DDCAC6;
+  font-size: 20px;
+}
+
+/*table*/
+.table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+.td, .th {
+  border: 1px solid #8D9499;
+  text-align: left;
+  padding: 8px;
+}
+.tr:nth-child(even) {
+  background-color: #DDCAC6;
+}
+
+/*columns*/
+.column{
+  float:left;
+  padding: 10px;
+
+}
+/*left column*/
+.column.left{
+  width: 30%;
+  padding: 1px 16px;
+  margin-left: 25%;
+  height:auto;
+}
+/*right column*/
+.column.right{
+  width: 20%;
+  padding: 1px 16px;
+  margin-left: 60%;
+  margin-top: -800px;
+  height:auto;
+}
+/*clear floats after the columns*/
+.row:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: auto){
+  .column.right, .column.left{
+    width: 100%;
+  }
+}
